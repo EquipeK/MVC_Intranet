@@ -1,9 +1,0 @@
-Version 1.2
-* Fix: Masked Input Fields
-
-Version 1.1
-* - jQuery is updated;
-* - Google Map is updated;
-
-Version 1.0
-Release
