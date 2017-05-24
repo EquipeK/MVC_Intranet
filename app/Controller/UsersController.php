@@ -28,6 +28,10 @@ class UsersController extends AppController {
         $this->render('users.login', compact('form', 'errors'));
     }
 
+    public function dashboard(){
+        $this->render('users.dashboard');   
+    }
+
     public function connect(){
 
         
