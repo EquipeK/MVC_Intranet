@@ -4,7 +4,7 @@
 <head>
     <!-- Meta and Title -->
     <meta charset="utf-8">
-    <title>myAdmin - A Responsive Bootstrap 3 Admin Dashboard Template</title>
+    <title>Intranet WDS</title>
     <meta name="keywords" content="HTML5, Bootstrap 3, Admin Template, UI Theme"/>
     <meta name="description" content="myAdmin - A Responsive HTML5 Admin UI Framework">
     <meta name="author" content="ThemeREX">
@@ -55,13 +55,13 @@
                 </div>
                 <div class="panel mw320">
 
-                    <form method="post" action="/" id="login">
+                    <form method="post" action="#" id="login">
                         <div class="panel-body pn mv10">
 
                             <div class="section">
                                 <label for="username" class="field prepend-icon">
                                     <input type="text" name="username" id="username" class="gui-input"
-                                           placeholder="Username">
+                                           placeholder="Nom d'utilisateur">
                                     <span class="field-icon">
                                         <i class="fa fa-user"></i>
                                     </span>
@@ -72,7 +72,7 @@
                             <div class="section">
                                 <label for="password" class="field prepend-icon">
                                     <input type="text" name="password" id="password" class="gui-input"
-                                           placeholder="Password">
+                                           placeholder="Mot de passe">
                                     <span class="field-icon">
                                         <i class="fa fa-lock"></i>
                                     </span>
@@ -84,10 +84,10 @@
                                 <div class="bs-component pull-left pt5">
                                     <div class="radio-custom radio-primary mb5 lh25">
                                         <input type="radio" id="remember" name="remember">
-                                        <label for="remember">Remember me</label>
+                                        <label for="remember">Se souvenir de moi</label>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-bordered btn-primary pull-right">Log in</button>
+                                <button type="submit" class="btn btn-bordered btn-primary pull-right">Se connecter</button>
                             </div>
                             <!-- /section -->
 
@@ -120,14 +120,14 @@
 <!-- Theme Scripts -->
 <script src="web/js/utility/utility.js"></script>
 <script src="web/js/utility/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="web/js/demo/demo.js"></script>
+<!--<script src="web/js/demo/demo.js"></script>-->
 <script src="web/js/main.js"></script>
 
 <!-- Page JS -->
 <script type="text/javascript">
     jQuery(document).ready(function () {
 
-        "use strict";
+        /*"use strict";
 
         // Init Theme Core
         Core.init();
@@ -141,19 +141,19 @@
                 x: window.innerWidth / 5,
                 y: window.innerHeight / 10
             }
-        });
+        });*/
 
     // Lorsque je soumets le formulaire
     jQuery('#login').on('submit', function(e) {
         e.preventDefault(); // J'empêche le comportement par défaut du navigateur, c-à-d de soumettre le formulaire
- 
+        window.location.replace("web/index.php");
         
         var $this = jQuery(this); // L'objet jQuery du formulaire
  
         // Je récupère les valeurs
         var pseudo = jQuery('#username').val();
         var mail = jQuery('#password').val();
-  
+
         // Je vérifie une première fois pour ne pas lancer la requête HTTP
         // si je sais que mon PHP renverra une erreur
         if(pseudo === '' || mail === '') {
