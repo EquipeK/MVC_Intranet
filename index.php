@@ -55,7 +55,7 @@
                 </div>
                 <div class="panel mw320">
 
-                    <form method="post" action="/" id="form-login">
+                    <form method="post" action="/" id="login">
                         <div class="panel-body pn mv10">
 
                             <div class="section">
